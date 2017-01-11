@@ -1,0 +1,44 @@
+{
+  "name": "photoBooth",
+  "productName": "Photo Booth",
+  "version": "0.0.1",
+  "description": "A Photobooth App",
+  "license": "MIT",
+  "repository": "user/repo",
+  "author": {
+    "name": "Sarah Larson",
+    "email": "contact@sarahelarson.com",
+    "url": "http://sarahelarson.com"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "main.js",
+    "app/index.html",
+    "app/css/style.css",
+    "app/js/scripts.js"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^1.0.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^8.0.0",
+    "electron": "^1.0.1",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
